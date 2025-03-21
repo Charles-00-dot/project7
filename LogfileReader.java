@@ -83,6 +83,8 @@ public class LogfileReader implements Iterator<LogEntry>
         reset();
     }
     
+    
+    
     /**
      * Does the reader have more data to supply?
      * @return true if there is more data available,
