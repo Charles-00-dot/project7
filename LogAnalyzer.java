@@ -48,7 +48,7 @@ public class LogAnalyzer
         
     }
     
-    public int numberOfAcces(){
+    public int numberOfAccess(){
         int total = 0;
         for(int hour = 0 ;hour < hourCounts.length; hour++){
             // total += hourCounts

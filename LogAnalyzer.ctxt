@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=LogAnalyzer
+comment0.text=\r\n\ Read\ web\ server\ data\ and\ analyse\ hourly\ access\ patterns.\r\n\ \r\n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling.\r\n\ @version\ \ \ \ 2016.02.29\r\n
+comment1.params=filename
+comment1.target=LogAnalyzer(java.lang.String)
+comment1.text=\r\n\ Create\ an\ object\ to\ analyze\ hourly\ web\ accesses.\r\n
+comment2.params=
+comment2.target=int\ numberOfAcces()
+comment3.params=
+comment3.target=void\ analyzeHourlyData()
+comment3.text=\r\n\ Analyze\ the\ hourly\ access\ data\ from\ the\ log\ file.\r\n
+comment4.params=
+comment4.target=void\ printHourlyCounts()
+comment4.text=\r\n\ Print\ the\ hourly\ counts.\r\n\ These\ should\ have\ been\ set\ with\ a\ prior\r\n\ call\ to\ analyzeHourlyData.\r\n
+comment5.params=
+comment5.target=void\ printData()
+comment5.text=\r\n\ Print\ the\ lines\ of\ data\ read\ by\ the\ LogfileReader\r\n
+comment6.params=
+comment6.target=void\ declarations()
+comment7.params=marks\ mean
+comment7.target=void\ printGreater(double[],\ double)
+numComments=8
