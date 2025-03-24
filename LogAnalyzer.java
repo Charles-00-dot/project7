@@ -25,6 +25,13 @@ public class LogAnalyzer
      * 11.  
      * 12.
      * 13.
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 17. It will retunr the first hour it encounters with that maximum count.
+     * 18
      */
     
     
@@ -51,11 +58,33 @@ public class LogAnalyzer
     public int numberOfAccess(){
         int total = 0;
         for(int hour = 0 ;hour < hourCounts.length; hour++){
-            // total += hourCounts
-            
-            System.out.println(total);
+            total += hourCounts[hour];
         }
         return total; 
+    }
+    public int busiestHour(){
+        int busiestHour = 0;
+        int maxCount = 0;
+        for(int hour = 0;hour < hourCounts.length; hour++){
+            if (hourCounts[hour]> maxCount){
+                maxCount = hourCounts[hour];
+                busiestHour = hour;
+            }
+        }
+        return busiestHour;
+    }
+    
+    public int quietestHour(){
+        int quietestHour =0;
+        int minCount= 0;
+        for(int hour = 1; hour < hourCounts.length; hour++){
+            if(hourCounts[hour] < minCount){
+                minCount = hourCounts[hour];
+                quietestHour= hour;
+            }
+        }
+        
+        return quietestHour;
     }
 
     /**
